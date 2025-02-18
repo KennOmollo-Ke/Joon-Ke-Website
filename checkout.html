@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joon - Computer and Accessories</title>
+  <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header id="mobile-header">
+        <div class="menu-icon" id="menu-toggle">
+          <!-- Hamburger Icon -->
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo.png" alt="Joon Company Logo">
+            </a>
+        </div>
+        
+        <div class="header-icons">
+          <a href="cart.html" class="cart-icon">
+            <img src="img/cart.png" alt="Cart">
+            <span id="cart-count-header">0</span>
+        </a>
+        
+        
+        </div>
+      </header> 
+
+    <!-- Fullscreen Menu -->
+    <nav id="hamburger-menu">
+        <div class="menu-header">
+            <button id="menu-close">✖</button>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#new-in">New In</a></li>
+            <li><a href="#Hp">HP Laptops</a></li>
+            <li><a href="#Dell">DELL Laptops</a></li>
+            <li><a href="#Lenovo">Lenovo Laptops</a></li>
+            <li><a href="#mouse">Mouses</a></li>
+            <li><a href="#keyboard">Keyboard</a></li>
+            <li><a href="#chargers">Laptop Chargers</a></li>
+            <li><a href="#monitors">Monitors</a></li>
+            <li><a href="#desktops">Desktops</a></li>
+            <li><a href="#microphones">Microphones</a></li>
+            <li><a href="#headphones">Headphones</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="checkout-container">
+            <!-- Order Summary Section -->
+            <div class="checkout-section">
+                <h2>Order Summary</h2>
+                <div id="order-summary">
+                    <!-- Products will be dynamically loaded here -->
+                </div>
+                <div class="checkout-total">
+                    <h3>Total: <span id="checkout-total">KSh 0.00</span></h3>
+                </div>
+            </div>
+            
+            <!-- Shipping Details Section -->
+            <div class="checkout-section">
+                <h2>Shipping Details</h2>
+                <form id="shipping-form">
+                    <div class="form-group">
+                        <label for="full-name">Full Name</label>
+                        <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <input type="text" id="address" name="address" placeholder="Enter your address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Payment Section -->
+            <div class="checkout-section">
+                <h2>Payment</h2>
+                <form id="payment-form">
+                    <div class="form-group">
+                        <label for="payment-method">Payment Method</label>
+                        <select id="payment-method" name="payment-method" required>
+                            <option value="mpesa">M-Pesa</option>
+                            <option value="credit-card">Credit/Debit Card</option>
+                            <option value="paypal">PayPal</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Submit Order -->
+            <div class="checkout-actions">
+                <button id="place-order-btn">Place Order</button>
+            </div>
+        </div>
+    </main>
+</section>
+<div class="contact-footer-container">
+  <!-- Contact Us Section -->
+  <section id="contact">
+      <h2>Contact Us</h2>
+      
+      <div class="contact-columns">
+          <!-- Contact Form -->
+          <div id="contact-form" class="contact-form">
+            <form action="mailto:info@example.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        
+              
+              <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=61565670460976" target="_blank" class="social-icon">
+                    <img src="icons/facebook-icon.webp" alt="Facebook">
+                    Facebook
+                </a>
+                <a href="https://www.tiktok.com/@joonlimited?_t=8relNIMrCkh&_r=1" target="_blank" class="social-icon">
+                    <img src="icons/tiktok-icon.png" alt="TikTok">
+                    TikTok
+                </a>
+                <a href="https://www.instagram.com/kennomollo/" target="_blank" class="social-icon">
+                    <img src="icons/instagram-icon.webp" alt="Instagram">
+                    Instagram
+                </a>
+            </div>
+            
+          </div>
+
+          <!-- Location Map -->
+          <div class="location-map">
+              <p>Visit us at our main office:</p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.8123066233206!2d34.75251787496466!3d-0.09947929989953835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182aa5fe1dbfbeb1%3A0xafe9937d44abce86!2sThe%20Glassbox!5e0!3m2!1sen!2ske!4v1732436308076!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          </div>
+      </div>
+  </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div id="bottom-menu">
+            <a href="cart.html">
+                <img src="icons/cart-icon.png" alt="Cart">
+                <p>Cart <span id="cart-count-footer">0</span></p> <!-- Dynamic Cart Count -->
+            </a>
+            <a href="search.html">
+                <img src="icons/search-icon.png" alt="Search">
+                <p>Search</p>
+            </a>
+            <a href="index.html" class="home-icon">
+                <img src="icons/home.webp" alt="Home">
+                <p>Home</p>
+            </a>
+            <a href="support.html">
+                <img src="icons/support-icon.png" alt="Support">
+                <p>Support</p>
+            </a>
+            <a href="#more">
+                <img src="icons/more-icon.png" alt="More">
+                <p>More</p>
+            </a>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

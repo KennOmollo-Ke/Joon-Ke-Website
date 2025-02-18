@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joon - Computer and Accessories</title>
+  <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header id="mobile-header">
+        <div class="menu-icon" id="menu-toggle">
+          <!-- Hamburger Icon -->
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="logo">
+          <a href="index.html">
+              <img src="img/logo.png" alt="Joon Company Logo">
+          </a>
+      </div>
+      
+        <div class="header-icons">
+          <a href="cart.html" class="cart-icon">
+            <img src="img/cart.png" alt="Cart">
+            <span id="cart-count-header">0</span>
+        </a>
+        
+        
+        </div>
+      </header>  
+      <!-- Fullscreen Menu -->
+      <nav id="hamburger-menu">
+        <div class="menu-header">
+  <button id="menu-close">✖</button>
+</div>
+
+        <ul>
+          <li><a href="#new-in">New in</a></li>
+          <li><a href="#Hp">HP Laptops</a></li>
+          <li><a href="#Dell">DELL Laptops</a></li>
+          <li><a href="#Lenovo">Lenovo Laptops</a></li>
+          <li><a href="#mouse">Mouses</a></li>
+          <li><a href="#keyboard">Keyboard</a></li>
+          <li><a href="#chargers">Laptop Chargers</a></li>
+          <li><a href="#monitors">Monitors</a></li>
+          <li><a href="#desktops">Desktops</a></li>
+          <li><a href="#microphones">Microphones</a></li>
+          <li><a href="#headphones">Headphones</a></li>
+        </ul>
+      </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div>
+      <h2>Guaranteed Quality</h2>
+      <p>Discover the best laptops, accessories, and gaming PCs at affordable prices!</p>
+    </div>
+    <div>
+      <button>Shop Now</button>
+    </div>
+  </section>
+
+  
+
+<!-- Featured Products Section -->
+<section id="featured-products">
+    <h2>Featured Products</h2>
+    <div class="product-grid">
+      <!-- Loop for 50 Product Items -->
+      <!-- Replace 'placeholder-image.jpg' with actual product images -->
+      <!-- Repeat this block for each product -->
+      <div class="product-item" data-id="21" data-name="HP 1030 G2, Core i7, 16 GB RAM, 512 GB SSD" data-price="48000" data-image="img/hp 1030 g2 i7  16 512.png">
+        <img src="img/hp 1030 g2 i7  16 512.png" alt="HP 1030 G2, Core i7, 16 GB RAM, 512 GB SSD">
+        <p class="product-title">HP 1030 G2, Core i7, 16 GB RAM, 512 GB SSD</p>
+        <p class="product-price">KSh 48,000.00</p>
+        <button class="add-to-cart-btn">🛒Add to Cart</button>
+      </div>
+      <div class="product-item" data-id="22" data-name="Hp 1030 G4, Core i7, 16 GB RAM, 512 SSD" data-price="55000" data-image="img/hp 1030 g4  i7 16 512.png">
+        <img src="img/hp 1030 g4  i7 16 512.png" alt="Hp 1030 G4, Core i7, 16 GB RAM, 512 SSD">
+        <p class="product-title">Hp 1030 G4, Core i7, 16 GB RAM, 512 SSD</p>
+        <p class="product-price">KSh 55,000.00</p>
+        <button class="add-to-cart-btn">🛒 Add to Cart</button>
+      </div>
+      <div class="product-item" data-id="23" data-name="Hp Probook 11 G2, Core i5, 8 GB RAM 256 SSD" data-price="23000" data-image="img/hp 11 g2 i5 8 256.png">
+        <img src="img/hp 11 g2 i5 8 256.png" alt="Hp Probook 11 G2, Core i5, 8 GB RAM 256 SSD">
+        <p class="product-title">Hp Probook 11 G2, Core i5, 8 GB RAM 256 SSD</p>
+        <p class="product-price">KSh 23,000.00</p>
+        <button class="add-to-cart-btn">🛒 Add to Cart</button>
+      </div>
+      <div class="product-item" data-id="24" data-name="Hp Z Book G7, Core i7, 16 GB RAM, 512 GB SSD" data-price="75000" data-image="img/hp z book i7 g7 10th gen.png">
+        <img src="img/hp z book i7 g7 10th gen.png" alt="hp z book i7 g7 10th gen">
+        <p class="product-title">Hp Z Book G7, Core i7, 16 GB RAM, 512 GB SSD</p>
+        <p class="product-price">KSh 75,000.00</p>
+        <button class="add-to-cart-btn">🛒 Add to Cart</button>
+      </div>
+      <div class="product-item" data-id="25" data-name="Hp 1030 G3, Core i5, 16 GB RAM, 512 GB SSD" data-price="48000" data-image="img/hp 1030g3  i5  16 512.png">
+        <img src="img/hp 1030g3  i5  16 512.png" alt="hp 1030g3 i5 16 512">
+        <p class="product-title">Hp 1030 G3, Core i5, 16 GB RAM, 512 GB SSD</p>
+        <p class="product-price">KSh 48,000.00</p>
+        <button class="add-to-cart-btn">🛒 Add to Cart</button>
+      </div>
+      <div class="product-item" data-id="26" data-name="Hp 820 G3, Core i5, 8 GB RAM, 256 GB SSD" data-price="27000" data-image="img/hp 820 g3  i5  8 256.png">
+        <img src="img/hp 820 g3  i5  8 256.png" alt="Hp 820 G3, Core i5, 8 GB RAM, 256 GB SSD">
+        <p class="product-title">Hp 820 G3, Core i5, 8 GB RAM, 256 GB SSD</p>
+        <p class="product-price">KSh 27,000.00</p>
+        <button class="add-to-cart-btn">🛒 Add to Cart</button>
+      </div>
+      <div class="product-item" data-id="27" data-name="Hp 840 G2, Core i5, 8 GB RAM, 256 GB SSD" data-price="23000" data-image="img/hp 840 g2 i5 8 256.png">
+        <img src="img/hp 840 g2 i5 8 256.png" alt="Hp 840 G2, Core i5, 8 GB RAM, 256 GB SSD">
+        <p class="product-title">Hp 840 G2, Core i5, 8 GB RAM, 256 GB SSD</p>
+        <p class="product-price">KSh 23,000.00</p>
+        <button class="add-to-cart-btn">🛒 Add to Cart</button>
+      </div>
+      <div class="product-item" data-id="28" data-name="Hp 650 G2, Core i5, 8 GB RAM, 512 GB SSD" data-price="32000" data-image="img/Hp 650 G2 Core i5 8 GB 512.png">
+        <img src="img/Hp 650 G2 Core i5 8 GB 512.png" alt="Hp 650 G2 Core i5 8 GB 512 SSD">
+        <p class="product-title">Hp 650 G2, Core i5, 8 GB RAM, 512 GB SSD</p>
+        <p class="product-price">KSh 32,000.00</p>
+        <button class="add-to-cart-btn">🛒 Add to Cart </button>
+      </div>
+      
+
+      <h2 class="section-heading">HP Laptops</h2>
+
+<!-- Video 1 -->
+<div class="video-container">
+    <video controls poster="img/handboss-poster.png">
+      <source src="img/handboss.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  
+  <!-- Video 2 -->
+  <div class="video-container">
+    <video controls poster="img/laptopstand.png">
+      <source src="img/laptopstand.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  
+
+  <div class="product-item" data-id="1" data-name="Hp 1040 G7, 16 GB RAM, 512 GB SSD, 10th Gen Core i7" data-price="65000" data-image="img/Hp 1040g7 16 512ssd 10th gen i7.png">
+    <img src="img/Hp 1040g7 16 512ssd 10th gen i7.png" alt="Hp 1040g7 16/512ssd 10th gen i7">
+    <p class="product-title">Hp 1040 G7, 16 GB RAM, 512 GB SSD, 10th Gen COre i7</p>
+    <p class="product-price">KSh 65,000.00</p>
+    <button class="add-to-cart-btn">🛒 Add to Cart</button>
+  </div>
+  <div class="product-item" data-id="2" data-name="Hp 1040 G3, 8 GB RAM, 256 GB SSD, Core i5, 6th Gen" data-price="27000" data-image="img/Hp 1040 G3 8 256ssd i5.png">
+    <img src="img/Hp 1040 G3 8 256ssd i5.png" alt="Product 2 Image">
+    <p class="product-title">Hp 1040 G3, 8 GB RAM,256 GB SSD, Core i5, 6th Gen</p>
+    <p class="product-price">KSh 27,000.00</p>
+    <button class="add-to-cart-btn">🛒 Add to Cart</button>
+  </div>
+  <div class="product-item" data-id="3" data-name="Hp Spectre G3, 8 GB RAM, 256 GB SSD, 6th Gen" data-price="55000" data-image="img/Spectre 8 256 ssd 6th gen.png">
+    <img src="img/Spectre 8 256 ssd 6th gen.png" alt="HP Spectre 8/256 ssd 6th gen">
+    <p class="product-title">Hp Spectre G3, 8 GB RAM, 256 GB SSD, 6th Gen</p>
+    <p class="product-price">KSh 55,000.00</p>
+    <button class="add-to-cart-btn">🛒 Add to Cart</button>
+  </div>
+  <div class="product-item" data-id="4" data-name="Hp 830 G7, Core i7, 16 GB RAM, 512 GB SSD, 10th Gen" data-price="55000" data-image="img/HP 830 G7 i7 16 512 ssd 10th Gen.avif">
+    <img src="img/HP 830 G7 i7 16 512 ssd 10th Gen.avif" alt="Hp 830 G7, Core i7, 16 GB RAM, 512 GB SSD, 10th Gen">
+    <p class="product-title">Hp 830 G7, Core i7, 16 GB RAM, 512 GB SSD, 10th Gen</p>
+    <p class="product-price">KSh 55,000.00</p>
+    <button class="add-to-cart-btn">🛒 Add to Cart</button>
+  </div>
+  <div class="product-item" data-id="5" data-name="HP 830 G7, Core i5, 16 GB RAM, 512 GB SSD, 10th Gen" data-price="47000" data-image="img/HP Elitebook 830 G7 i5 16 512 ssd.webp">
+    <img src="img/HP Elitebook 830 G7 i5 16 512 ssd.webp" alt="HP Elitebook 830 G7 i5 16 512 ssd">
+    <p class="product-title">HP 830 G7, Core i5, 16 GB RAM, 512 GB SSD, 10th Gen</p>
+    <p class="product-price">KSh 47,000.00</p>
+    <button class="add-to-cart-btn">🛒 Add to Cart</button>
+  </div>
+  <div class="product-item" data-id="6" data-name="Hp Z book G5, Core i5, 16 GB RAM, 512 GB SSD, 8th Gen" data-price="44000" data-image="img/Z book G5 i5 16 512 ssd.png">
+    <img src="img/Z book G5 i5 16 512 ssd.png" alt="Hp Z book G5, Core i5, 16 GB RAM, 512 GB SSD, 8th Gen">
+    <p class="product-title">Hp Z book G5, Core i5, 16 GB RAM, 512 GB SSD, 8th Gen</p>
+    <p class="product-price">KSh 44,000.00</p>
+    <button class="add-to-cart-btn">🛒 Add to Cart</button>
+  </div>
+  <div class="product-item" data-id="7" data-name="HP 850 G5, Core i5, 16 GB RAM, 512 GB SSD, 8th Gen, 15 inch" data-price="39000" data-image="img/850 G5 i5 16 512 ssd  15 inch.jpg">
+    <img src="img/850 G5 i5 16 512 ssd  15 inch.jpg" alt="HP 850 G5, Core i5, 16 GB RAM, 512 GB SSD, 8th Gen, 1">
+    <p class="product-title">HP 850 G5, Core i5, 16 GB RAM, 512 GB SSD, 8th Gen, 15"</p>
+    <p class="product-price">KSh 39,000.00</p>
+    <button class="add-to-cart-btn">🛒 Add to Cart</button>
+  </div>
+  <div class="product-item" data-id="8" data-name="HP Elitebook, 840 G5, 8 GB RAM, 256 GB SSD, 8th Gen" data-price="37000" data-image="img/840 G5 8 256 ssd i7.webp">
+    <img src="img/840 G5 8 256 ssd i7.webp" alt="HP Elitebook, 840 G5, 8 GB RAM, 256 GB SSD, 8th Gen">
+    <p class="product-title">HP Elitebook, 840 G5, 8 GB RAM, 256 GB SSD, 8th Gen</p>
+    <p class="product-price">KSh 37,000.00</p>
+    <button class="add-to-cart-btn">🛒 Add to Cart</button>
+  </div>
+  <div class="product-item" data-id="9" data-name="HP 430 G7, Core i5, 8 GB RAM, 256 GB SSD, 10th Gen" data-price="37000" data-image="img/430 G7 i5 8256 ssd.webp">
+    <img src="img/430 G7 i5 8256 ssd.webp" alt="430 G7 i5 8256 ssd">
+    <p class="product-title">HP 430 G7, Core i5, 8 GB RAM, 256 GB SSD, 10th Gen</p>
+    <p class="product-price">KSh 37,000.00</p>
+    <button class="add-to-cart-btn">🛒 Add to Cart</button>
+  </div>
+  <!-- Repeat the structure for the rest of your products -->
+  
+  <div class="product-item" data-id="10" data-name="HP 830 G5, Core i5, 8 GB RAM, 256 GB SSD" data-price="31000" data-image="img/HP_830_G5__Core_i5__8_GB_RAM__256_GB_SSD.avif">
+    <img src="img/HP_830_G5__Core_i5__8_GB_RAM__256_GB_SSD.avif" alt="HP 830 G5, Core i5, 8 GB RAM, 256 GB SSD">
+    <p class="product-title">HP 830 G5, Core i5, 8 GB RAM, 256 GB SSD</p>
+    <p class="product-price">KSh 31,000.00</p>
+    <button class="add-to-cart-btn">🛒 Add to Cart</button>
+  </div>
+  <div class="product-item" data-id="11" data-name="HP 830 G6, Core i7, 16 GB RAM, 512 GB SSD, 8th Gen" data-price="43000" data-image="img/830 G6 i7 16 512ssd touch 8th gen.webp">
+    <img src="img/830 G6 i7 16 512ssd touch 8th gen.webp" alt="HP 830 G6, Core i7, 16 GB RAM, 512 GB SSD, Touch, 8th Gen">
+    <p class="product-title">HP 830 G6, Core i7, 16 GB RAM, 512 GB SSD, 8th Gen</p>
+    <p class="product-price">KSh 43,000.00</p>
+    <button class="add-to-cart-btn">🛒 Add to Cart</button>
+  </div>
+  <div class="product-item" data-id="12" data-name="HP 840 G3, Core i7, 8 GB RAM, 256 GB SSD, 6th Gen" data-price="28000" data-image="img/HP 840 G3, Core i7, 8 GB RAM, 256 GB SSD, 6th Gen.png">
+    <img src="img/HP 840 G3, Core i7, 8 GB RAM, 256 GB SSD, 6th Gen.png" alt="HP 840 G3, Core i7, 8 GB RAM, 256 GB SSD, 6th Gen">
+    <p class="product-title">HP 840 G3, Core i7, 8 GB RAM, 256 GB SSD, 6th Gen</p>
+    <p class="product-price">KSh 28,000.00</p>
+    <button class="add-to-cart-btn">🛒 Add to Cart</button>
+  </div>
+  <div class="product-item" data-id="13" data-name="HP 640 G4, Core i5, 8 RAM, 256 GB SSD, 7th Gen" data-price="27000" data-image="img/640 G4 i5 8 256 ssd.png">
+    <img src="img/640 G4 i5 8 256 ssd.png" alt="640 G4 i5 8 256 ssd">
+    <p class="product-title">HP 640 G4, Core i5, 8 RAM, 256 GB SSD, 7th Gen</p>
+    <p class="product-price">KSh 27,000.00</p>
+    <button class="add-to-cart-btn">🛒 Add to Cart</button>
+  </div>
+  <div class="product-item" data-id="14" data-name="HP 840 G3, Core i5, 8 GB RAM, 256 GB SSD, 6th Gen" data-price="25000" data-image="img/840 G3 i5 8 256 ssd 6th gen.png">
+    <img src="img/840 G3 i5 8 256 ssd 6th gen.png" alt="HP 840 G3, Core i5, 8 GB RAM, 256 GB SSD, 6th Gen">
+    <p class="product-title">HP 840 G3, Core i5, 8 GB RAM, 256 GB SSD, 6th Gen</p>
+    <p class="product-price">KSh 25,000.00</p>
+    <button class="add-to-cart-btn">🛒 Add to Cart</button>
+  </div>
+  <div class="product-item" data-id="15" data-name="HP 840 G4, Core i5, 8 GB RAM, 256 GB SSD, 6th Gen" data-price="28000" data-image="img/840 G4 i5 8 256ssd Touch 6th gen.png">
+    <img src="img/840 G4 i5 8 256ssd Touch 6th gen.png" alt="HP 840 G4, Core i5, 8 GB RAM, 256 GB SSD, 6th Gen">
+    <p class="product-title">HP 840 G4, Core i5, 8 GB RAM, 256 GB SSD, 6th Gen</p>
+    <p class="product-price">KSh 28,000.00</p>
+    <button class="add-to-cart-btn">🛒 Add to Cart</button>
+  </div>
+  <div class="product-item" data-id="16" data-name="HP 840 G3, Core i7, 8 GB RAM, 256 GB SSD, 6th Gen" data-price="28500" data-image="img/840 G3 i7 8 256ssd 6th Gen.png">
+    <img src="img/840 G3 i7 8 256ssd 6th Gen.png" alt="HP 840 G3, Core i7, 8 GB RAM, 256 GB SSD, 6th Gen">
+    <p class="product-title">HP 840 G3, Core i7, 8 GB RAM, 256 GB SSD, 6th Gen</p>
+    <p class="product-price">KSh 28,500.00</p>
+    <button class="add-to-cart-btn">🛒 Add to Cart</button>
+  </div>
+  <div class="product-item" data-id="17" data-name="HP 840 G2, Core i7, 8 GB RAM, 256 GB SSD, 5th Gen" data-price="25000" data-image="img/840 G2 i7 8 256 ssd.png">
+    <img src="img/840 G2 i7 8 256 ssd.png" alt="HP 840 G2, Core i7, 8 GB RAM, 256 GB SSD, 5th Gen">
+    <p class="product-title">HP 840 G2, Core i7, 8 GB RAM, 256 GB SSD, 5th Gen</p>
+    <p class="product-price">KSh 25,000.00</p>
+    <button class="add-to-cart-btn">🛒 Add to Cart</button>
+  </div>
+  <div class="product-item" data-id="18" data-name="Hp 840 G2, Core i5, 8 GB RAM, 256 GB SSD, 5th Gen" data-price="24500" data-image="img/Hp 840 G2, Core i5, 8 GB RAM, 256 GB SSD.png">
+    <img src="img/Hp 840 G2, Core i5, 8 GB RAM, 256 GB SSD.png" alt="Hp 840 G2, Core i5, 8 GB RAM, 256 GB SSD, 5th Gen">
+    <p class="product-title">Hp 840 G2, Core i5, 8 GB RAM, 256 GB SSD, 5th Gen</p>
+    <p class="product-price">KSh 24,500.00</p>
+    <button class="add-to-cart-btn">🛒 Add to Cart</button>
+  </div>
+  <div class="product-item" data-id="19" data-name="HP 820 G3, Core i5, 8 GB RAM, 256 GB SSD, 6th Gen" data-price="24000" data-image="img/820 G3 i5 8 256ssd.png">
+    <img src="img/820 G3 i5 8 256ssd.png" alt="HP 820 G3, Core i5, 8 GB RAM, 256 GB SSD, 6th Gen">
+    <p class="product-title">HP 820 G3, Core i5, 8 GB RAM, 256 GB SSD, 6th Gen</p>
+    <p class="product-price">KSh 24,000.00</p>
+    <button class="add-to-cart-btn">🛒 Add to Cart</button>
+  </div>
+  <div class="product-item" data-id="20" data-name="Hp 820 G4, 8 GB RAM, 256 GB SSD, Core i5, 7th Gen" data-price="28500" data-image="img/Hp 820 G4, 8 GB RAM, 256 GB SSD.png">
+    <img src="img/Hp 820 G4, 8 GB RAM, 256 GB SSD.png" alt="Hp 820 G4, 8 GB RAM, 256 GB SSD, Core i5, 7th Gen">
+    <p class="product-title">Hp 820 G4, 8 GB RAM, 256 GB SSD, Core i5, 7th Gen</p>
+    <p class="product-price">KSh 28,500.00</p>
+    <button class="add-to-cart-btn">🛒 Add to Cart</button>
+  </div>
+  
+
+      <h2 class="section-heading">Lenovo Laptops</h2>
+
+<!-- Video 1 -->
+<div class="video-container">
+    <video controls poster="img/lenovot490.png">
+      <source src="img/t490.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  
+  <!-- Video 2 -->
+  <div class="video-container">
+    <video controls poster="img/Laptops under 20k.png">
+      <source src="img/laptopsunder20k.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div class="product-item" data-id="29" data-name="Lenovo Yoga 11e, Core i3, 4GB RAM, 128 GB SSD" data-price="21000" data-image="img/Yoga 11e i3 4 128ssd 7th gen.png">
+    <img src="img/Yoga 11e i3 4 128ssd 7th gen.png" alt="Lenovo Yoga 11e, Core i3, 4GB RAM, 128 GB SSD, 7th Gen">
+    <p class="product-title">Lenovo Yoga 11e, Core i3, 4GB RAM, 128 GB SSD</p>
+    <p class="product-price">KSh 21,000.00</p>
+    <button class="add-to-cart-btn">🛒 Add to Cart</button>
+  </div>
+  <div class="product-item" data-id="30" data-name="Lenovo Yoga 11e Pentium, 4 GB RAM, 128 GB SSD" data-price="19500" data-image="img/Yoga 11e pentium 4 128 ssd.png">
+    <img src="img/Yoga 11e pentium 4 128 ssd.png" alt="Yoga 11e Pentium, 4 GB RAM, 128 GB SSD">
+    <p class="product-title">Lenovo Yoga 11e Pentium, 4 GB RAM, 128 GB SSD</p>
+    <p class="product-price">KSh 19,500.00</p>
+    <button class="add-to-cart-btn">🛒 Add to Cart</button>
+  </div>
+  <div class="product-item" data-id="31" data-name="Lenovo Yoga 11e, 8GB RAM, 256 GB SSD" data-price="24000" data-image="img/Yoga_11e__i5_7th_Gen__8256_ssd.png">
+    <img src="img/Yoga_11e__i5_7th_Gen__8256_ssd.png" alt="Lenovo Yoga 11e, 8GB RAM, 256 GB SSD">
+    <p class="product-title">Lenovo Yoga 11e, 8GB RAM, 256 GB SSD</p>
+    <p class="product-price">KSh 24,000.00</p>
+    <button class="add-to-cart-btn">🛒 Add to Cart</button>
+  </div>
+  <div class="product-item" data-id="32" data-name="Lenovo x280, 16 GB RAM, 256 GB SSD, Core i7, 7th Gen, Touch" data-price="32000" data-image="img/x280 16 256ssd i7 Touch.png">
+    <img src="img/x280 16 256ssd i7 Touch.png" alt="Lenovo x280, 16 GB RAM, 256 GB SSD, Core i7 Touch">
+    <p class="product-title">Lenovo x280, 16 GB RAM, 256 GB SSD, Core i7, 7th Gen, Touch</p>
+    <p class="product-price">KSh 32,000.00</p>
+    <button class="add-to-cart-btn">🛒 Add to Cart</button>
+  </div>
+  <div class="product-item" data-id="33" data-name="Lenovo T480s, Core i5, 8 GB RAM, 256 GB SSD" data-price="33500" data-image="img/T480s i5 8 256ssd.png">
+    <img src="img/T480s i5 8 256ssd.png" alt="Leovo T480s, Core i5, 8 GB RAM, 256 GB SSD">
+    <p class="product-title">Leovo T480s, Core i5, 8 GB RAM, 256 GB SSD</p>
+    <p class="product-price">KSh 33,500.00</p>
+    <button class="add-to-cart-btn">🛒 Add to Cart</button>
+  </div>
+  <div class="product-item" data-id="34" data-name="Lenovo T460s, Core i5, 8 GB RAM, 256 GB SSD" data-price="29000" data-image="img/Lenovo T460s, Core i5, 8 GB RAm, 256 GB SSD.webp">
+    <img src="img/Lenovo T460s, Core i5, 8 GB RAm, 256 GB SSD.webp" alt="Lenovo T460s, Core i5, 8 GB RAm, 256 GB SSD">
+    <p class="product-title">Lenovo T460s, Core i5, 8 GB RAM, 256 GB SSD</p>
+    <p class="product-price">KSh 29,000.00</p>
+    <button class="add-to-cart-btn">🛒 Add to Cart</button>
+  </div>
+  <div class="product-item" data-id="35" data-name="Lenovo x240, Core i5, 4 GB RAM, 500 GB HDD" data-price="26000" data-image="img/x240 i5 4 500HDD.png">
+    <img src="img/x240 i5 4 500HDD.png" alt="x240 i5 4 500HDD">
+    <p class="product-title">Lenovo x240, Core i5, 4 GB RAM, 500 GB HDD</p>
+    <p class="product-price">KSh 26,000.00</p>
+    <button class="add-to-cart-btn">🛒 Add to Cart</button>
+  </div>
+  <div class="product-item" data-id="36" data-name="Lenovo x240, Core i3, 4 GB RAM, 500GB HDD" data-price="17500" data-image="img/x240 i3 4 500HDD.png">
+    <img src="img/x240 i3 4 500HDD.png" alt="Lenovo x240, Core i3, 4 GB RAM, 500GB HDD">
+    <p class="product-title">Lenovo x240, Core i3, 4 GB RAM, 500GB HDD</p>
+    <p class="product-price">KSh 17,500.00</p>
+    <button class="add-to-cart-btn">🛒 Add to Cart</button>
+  </div>
+  <div class="product-item" data-id="37" data-name="Lenovo x380, Core i5, 16 GB RAM, 512 GB SSD, 8th Gen" data-price="42000" data-image="img/x380 i5 16 512ssd 8th gen.png">
+    <img src="img/x380 i5 16 512ssd 8th gen.png" alt="Lenovo x380, Core i5, 16 GB RAM, 512 GB SSD, 8th Gen">
+    <p class="product-title">Lenovo x380, Core i5, 16 GB RAM, 512 GB SSD, 8th Gen</p>
+    <p class="product-price">KSh 42,000.00</p>
+    <button class="add-to-cart-btn">🛒 Add to Cart</button>
+  </div>
+  <div class="product-item" data-id="38" data-name="Lenovo x390, Core i5, 8 GB RAM, 256 GB SSD, 8th Gen" data-price="31000" data-image="img/Lenovo x390, Core i5, 8 GB RAM, 256 GB SSD, 8th Gen.png">
+    <img src="img/Lenovo x390, Core i5, 8 GB RAM, 256 GB SSD, 8th Gen.png" alt="Lenovo x390, Core i5, 8 GB RAM, 256 GB SSD, 8th Gen">
+    <p class="product-title">Lenovo x390, Core i5, 8 GB RAM, 256 GB SSD, 8th Gen</p>
+    <p class="product-price">KSh 31,000.00</p>
+    <button class="add-to-cart-btn">🛒 Add to Cart</button>
+  </div>
+  <div class="product-item" data-id="39" data-name="Lenovo x370, Core i7, 8 GB RAM, 256 GB SSD, 7th Gen" data-price="36000" data-image="img/x370 i7 8 256 ssd 7th Gen.webp">
+    <img src="img/x370 i7 8 256 ssd 7th Gen.webp" alt="Lenovo x370 Core i7, 8 GB RAM, 256 GB SSD, 7th Gen">
+    <p class="product-title">Lenovo x370 Core i7, 8 GB RAM, 256 GB SSD, 7th Gen</p>
+    <p class="product-price">KSh 36,000.00</p>
+    <button class="add-to-cart-btn">🛒 Add to Cart</button>
+  </div>
+  <div class="product-item" data-id="40" data-name="Lenovo X1 Yoga i7, 10th Gen, 16 GB RAM, 512 GB SSD" data-price="55000" data-image="img/X1 yoga i7 10th gen16 512 ssd.png">
+    <img src="img/X1 yoga i7 10th gen16 512 ssd.png" alt="Lenovo X1 Yoga i7, 10th Gen, 16 GB RAM, 512 GB SSD">
+    <p class="product-title">Lenovo X1 Yoga i7, 10th Gen, 16 GB RAM, 512 GB SSD</p>
+    <p class="product-price">KSh 55,000.00</p>
+    <button class="add-to-cart-btn">🛒 Add to Cart</button>
+  </div>
+  
+      <h2 class="section-heading">DELL Laptops</h2>
+      
+      <div class="product-item" data-id="41" data-name="DELL 7280, Core i5, 8 GB RAM, 256 GB SSD, 6th Gen" data-price="22000" data-image="img/7280 i5 8 256 ssd 6th gen.png">
+        <img src="img/7280 i5 8 256 ssd 6th gen.png" alt="DELL 7280, Core i5, 8 GB RAM, 256 GB SSD, 6th Gen">
+        <p class="product-title">DELL 7280, Core i5, 8 GB RAM, 256 GB SSD, 6th Gen</p>
+        <p class="product-price">KSh 22,000.00</p>
+        <button class="add-to-cart-btn">🛒 Add to Cart</button>
+      </div>
+      <div class="product-item" data-id="42" data-name="DELL 3410, 8 GB RAM, 256 GB SSD, Core i5, 10th Gen" data-price="37000" data-image="img/3410 8 256dssd i5 10th gen.png">
+        <img src="img/3410 8 256dssd i5 10th gen.png" alt="DELL 3410, 8 GB RAM, 256 GB SSD, Core i5, 10th Gen">
+        <p class="product-title">DELL 3410, 8 GB RAM, 256 GB SSD, Core i5, 10th Gen</p>
+        <p class="product-price">KSh 37,000.00</p>
+        <button class="add-to-cart-btn">🛒 Add to Cart</button>
+      </div>      
+    </div>
+    </div>
+    
+  
+    <!-- View All Button -->
+    <div id="view-all">
+        <button onclick="location.href='#categories'">View All Products</button>
+    </div>
+  </section>
+  
+
+  <section id="categories">
+    <h2>Categories</h2>
+    <div class="category-list">
+      <a href="#laptops" class="category-item">Laptops</a>
+      <a href="#accessories" class="category-item">Accessories</a>
+      <a href="#gaming-pcs" class="category-item">Gaming PCs</a>
+      <a href="#desktops" class="category-item">Desktops</a>
+    </div>
+  </section>
+  <div class="contact-footer-container">
+    <!-- Contact Us Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        
+        <div class="contact-columns">
+            <!-- Contact Form -->
+            <div id="contact-form" class="contact-form">
+              <form action="mailto:info@example.com" method="post" enctype="text/plain">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required>
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" required></textarea>
+                  <button type="submit">Send</button>
+              </form>
+          </div>
+          
+                
+                <div class="social-links">
+                  <a href="https://www.facebook.com/profile.php?id=61565670460976" target="_blank" class="social-icon">
+                      <img src="icons/facebook-icon.webp" alt="Facebook">
+                      Facebook
+                  </a>
+                  <a href="https://www.tiktok.com/@joonlimited?_t=8relNIMrCkh&_r=1" target="_blank" class="social-icon">
+                      <img src="icons/tiktok-icon.png" alt="TikTok">
+                      TikTok
+                  </a>
+                  <a href="https://www.instagram.com/kennomollo/" target="_blank" class="social-icon">
+                      <img src="icons/instagram-icon.webp" alt="Instagram">
+                      Instagram
+                  </a>
+              </div>
+              
+            </div>
+
+            <!-- Location Map -->
+            <div class="location-map">
+                <p>Visit us at our main office:</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.8123066233206!2d34.75251787496466!3d-0.09947929989953835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182aa5fe1dbfbeb1%3A0xafe9937d44abce86!2sThe%20Glassbox!5e0!3m2!1sen!2ske!4v1732436308076!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+        </div>
+    </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div id="bottom-menu">
+        <a href="cart.html" class="cart-icon">
+            <img src="icons/cart-icon.png" alt="Cart">
+            <p>Cart <span id="cart-count-footer">0</span></p>
+        </a>
+        
+      <a href="#search">
+        <img src="icons/search-icon.png" alt="Search">
+        <p>Search</p>
+      </a>
+      <a href="#home" class="home-icon">
+        <img src="icons/home.webp" alt="Home">
+        <p>Home</p>
+      </a>
+      <a id="support-icon" href="#contact-form">
+        <img src="icons/support-icon.png" alt="Support">
+        <p>Support</p>
+    </a>
+    
+      <a href="#more">
+        <img src="icons/more-icon.png" alt="More">
+        <p>More</p>
+      </a>
+    </div>
+  </footer>
+  
+  <script src="scripts.js"></script>
+</body>
+</html>
