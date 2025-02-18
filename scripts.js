@@ -15,7 +15,7 @@ updateCartCount();
 document.addEventListener('DOMContentLoaded', () => {
     const currentPage = window.location.pathname;
 
-    if (currentPage === '/' || currentPage === '/index.html') {
+    if (currentPage === '/' || currentPage === '/') {
         // This block runs on the main product listing page
         attachAddToCartButtons();
     }
@@ -181,7 +181,7 @@ function renderCart() {
         cartItemsContainer.innerHTML = `
             <p class="empty-cart-text">Your cart is empty.</p>
             <div class="continue-shopping-container">
-                <a href="index.html" class="continue-shopping-btn">Continue Shopping</a>
+                <a href="/" class="continue-shopping-btn">Continue Shopping</a>
             </div>
         `;
         cartTotalElement.textContent = '0.00';
@@ -343,7 +343,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (cart.length === 0) {
         // If cart is empty, show a message and hide total
         // In the checkout flow:
-        orderSummary.innerHTML = '<p>Your cart is empty. <a href="index.html">Continue shopping</a></p>';
+        orderSummary.innerHTML = '<p>Your cart is empty. <a href="/">Continue shopping</a></p>';
         checkoutTotal.textContent = 'KSh 0.00';
         return;
     }
@@ -372,7 +372,7 @@ document.addEventListener('DOMContentLoaded', () => {
         placeOrderBtn.addEventListener('click', () => {
             alert('Order placed successfully!');
             localStorage.removeItem('cart'); // Clear cart
-            window.location.href = 'index.html'; // Redirect to homepage
+            window.location.href = '/'; // Redirect to homepage
         });
     }
 });
