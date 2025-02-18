@@ -19,12 +19,8 @@ document.addEventListener('DOMContentLoaded', () => {
         // This block runs on the main product listing page
         attachAddToCartButtons();
     }
-
-    if (currentPage === '/cart' || currentPage === '/cart/') {
-        // This block runs on the cart page
-        renderCart();
-    }
 });
+
 
 
 // Attach event listeners to "Add to Cart" buttons
@@ -346,6 +342,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (cart.length === 0) {
         // If cart is empty, show a message and hide total
+        // In the checkout flow:
         orderSummary.innerHTML = '<p>Your cart is empty. <a href="index.html">Continue shopping</a></p>';
         checkoutTotal.textContent = 'KSh 0.00';
         return;
@@ -375,7 +372,7 @@ document.addEventListener('DOMContentLoaded', () => {
         placeOrderBtn.addEventListener('click', () => {
             alert('Order placed successfully!');
             localStorage.removeItem('cart'); // Clear cart
-            window.location.href = 'index.html'; // Redirect to homepage
+            window.location.href = 'joon.ke'; // Redirect to homepage
         });
     }
 });
