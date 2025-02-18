@@ -160,7 +160,7 @@ function showAddedToCartNotification(product) {
     document.body.appendChild(notification);
 
     document.getElementById('view-cart-btn').addEventListener('click', () => {
-        window.location.href = 'cart.html';
+        window.location.href = '/cart';
     });
 
     setTimeout(() => {
@@ -174,7 +174,7 @@ function renderCart() {
     const cartTotalElement = document.getElementById('cart-total');
 
     if (!cartItemsContainer || !cartTotalElement) {
-        console.error('Cart items or total element not found. Ensure cart.html is correct.');
+        console.error('Cart items or total element not found. Ensure /cart is correct.');
         return;
     }
 
