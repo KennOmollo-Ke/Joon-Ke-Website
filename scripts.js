@@ -15,16 +15,17 @@ updateCartCount();
 document.addEventListener('DOMContentLoaded', () => {
     const currentPage = window.location.pathname;
 
-    if (currentPage.includes('index.html') || currentPage === '/') {
-        // This block runs on the product listing page
+    if (currentPage === '/' || currentPage === '/index.html') {
+        // This block runs on the main product listing page
         attachAddToCartButtons();
     }
 
-    if (currentPage.includes('cart.html')) {
+    if (currentPage === '/cart' || currentPage === '/cart/') {
         // This block runs on the cart page
         renderCart();
     }
 });
+
 
 // Attach event listeners to "Add to Cart" buttons
 function attachAddToCartButtons() {
