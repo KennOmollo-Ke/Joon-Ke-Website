@@ -372,7 +372,7 @@ document.addEventListener('DOMContentLoaded', () => {
         placeOrderBtn.addEventListener('click', () => {
             alert('Order placed successfully!');
             localStorage.removeItem('cart'); // Clear cart
-            window.location.href = 'joon.ke'; // Redirect to homepage
+            window.location.href = 'index.html'; // Redirect to homepage
         });
     }
 });
